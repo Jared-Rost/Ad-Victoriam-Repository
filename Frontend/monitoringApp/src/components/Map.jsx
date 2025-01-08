@@ -15,7 +15,7 @@ function Map({ users }) {
 
 	const { isLoaded } = useJsApiLoader({
 		id: 'google-map-script',
-		googleMapsApiKey: 'AIzaSyC_9hEDb-IXuPbkv5CqW5GcNtwBAsuihpA'
+		googleMapsApiKey: // removed
 	})
 
 	const [map, setMap] = useState(null)
