@@ -2,7 +2,7 @@
 
 My team completed the G3 Challenge which was to create a website with a log in screen where someone can log in as either an admin or a user; admins see a map that contains the locations of all users who have logged in.
 
-Made with Python, DOcker, and the Google Maps API.
+Made with Python, Docker, and the Google Maps API.
 
 The application no longer runs since the Google Maps API key which we used has now expired.
 
