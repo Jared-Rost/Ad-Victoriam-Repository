@@ -1,52 +1,133 @@
-# .devHacks 2024! Project
+# Ad Victoriam - Location Monitoring System 🗺️📍
 
-My team completed the G3 Challenge which was to create a website with a log in screen where someone can log in as either an admin or a user; admins see a map that contains the locations of all users who have logged in.
+> A real-time location tracking web application with role-based access control
 
-Made with Python, Docker, and the Google Maps API.
+Created for **.devHacks 2024** - A monitoring solution that enables administrators to view user locations on an interactive map.
 
-The application no longer runs since the Google Maps API key which we used has now expired.
+## 📋 Overview
 
-## .devHacks 2024 Event Details
+Ad Victoriam is a full-stack web application that implements a location monitoring system with two distinct user experiences. Regular users can share their location data, while administrators have access to a comprehensive dashboard displaying all user locations on an interactive map in real-time.
 
-- **Date & Time:** February 23-24 (5:00 PM - 5:00 PM)
-- **Location:** EITC Atrium
+### Key Features
 
-## Theme or Focus
+- 🗺️ **Interactive Map Display** - Real-time visualization of user locations
+- 👥 **Role-Based Access** - Separate interfaces for admin and regular users
+- 📍 **Location Tracking** - Automatic collection and storage of user location data
+- 🔐 **Secure Authentication** - User management system with role permissions
+- 🌐 **Web-Based Platform** - Accessible from any browser
+- 🐳 **Containerized Deployment** - Docker support for easy deployment
 
-.devHacks 2024 does not have a theme this year! However, we do have prize categories. 5 of them will be announced at the day of the event. Participants are encouraged to explore innovative solutions and tackle challenges of their free reign!
+## 🛠️ Tech Stack
 
-## Resources
+### Frontend (43.7% JavaScript, 13.2% CSS, 9.3% HTML)
+- **React** - Built with Create React App
+- **JavaScript** - Core application logic
+- **CSS** - Custom styling and responsive design
+- Separate apps for monitoring (admin) and user interfaces
 
-- Please head over to [devclub.ca/devhacks](https://devclub.ca/devhacks) to address any confusion that you have.
-- This git cheatsheet might be of use to you [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf).
+### Backend (33.6% Python)
+- **Python** - Server-side logic and API
+- RESTful API architecture
+- Location data processing and storage
 
-## Code of Conduct
+### DevOps (0.2% Dockerfile)
+- **Docker** - Containerization for consistent deployment
+- Easy setup and scaling
 
-Please review and adhere to our [Code of Conduct](https://devclub.ca/devhacks-code-of-conduct) throughout the event. We're committed to creating a safe, inclusive, and welcoming environment for all participants.
+## 🚀 Getting Started
 
-## Submission Guidelines
+### Prerequisites
 
-- Please add a branch called `ready-for-submission` in order to signify that you want to put your project for judging.
-- We will only accept commits on the 24 hour period of 5:00 PM - 5:00 PM from February 23 - 24.
+- Node.js and npm
+- Python 3.x
+- Docker (optional, for containerized deployment)
 
-## Support and Assistance
+### Installation
 
-If you need assistance or have any questions during the hackathon, don't hesitate to reach out to our team at the event. We will be normally at the atrium.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Jared-Rost/Ad-Victoriam-Repository.git
+   cd Ad-Victoriam-Repository
+   ```
 
-## Acknowledgments
+2. **Backend Setup**
+   ```bash
+   cd backend
+   pip install -r requirements.txt
+   python app.py
+   ```
 
-We'd like to express our gratitude to our sponsors:
+3. **Frontend Setup - Admin Monitoring App**
+   ```bash
+   cd Frontend/monitoringApp
+   npm install
+   npm start
+   ```
+   The admin dashboard will open at [http://localhost:3000](http://localhost:3000)
 
-- [Pollard Banknote](https://www.pollardbanknote.com/)
-- [Johnston Group](https://johnstongroup.ca/)
-- [Lotlinx](https://www.lotlinx.ca/)
-- [Niche Technology](https://nicherms.com/)
-- [G3 Canada](https://www.g3.ca/)
-- [Priceline Partner Solutions](https://pricelinepartnersolutions.com/)
-- [Karve IT](https://karve.it/)
+4. **Frontend Setup - User App**
+   ```bash
+   cd Frontend/userApp
+   npm install
+   npm start
+   ```
+   The user interface will open at a different port
 
-Our volunteers who have made .devHacks 2024 possible.
+### Docker Deployment (Optional)
 
-Thank you for your support!
+```bash
+docker-compose up
+```
 
-Happy hacking, and best of luck to all participants! Let's make .devHacks 2024 an unforgettable experience!
+## 🏗️ Project Structure
+
+```
+Ad-Victoriam-Repository/
+├── Frontend/
+│   ├── monitoringApp/    # Admin dashboard with map view
+│   ├── userApp/          # Regular user interface
+│   └── trash/            # Development artifacts
+├── backend/              # Python API server
+├── Dockerfile            # Container configuration
+└── README.md             # This file
+```
+
+## 👤 User Roles
+
+### Regular Users
+- Share location data
+- View their own activity
+- Simple, privacy-focused interface
+
+### Admin Users
+- View all user locations on map
+- Real-time monitoring dashboard
+- Comprehensive location history
+
+## 💡 Use Cases
+
+- **Team Coordination** - Track field team locations in real-time
+- **Event Management** - Monitor attendee locations during large events
+- **Fleet Management** - Track delivery personnel or vehicles
+- **Safety Monitoring** - Ensure team member safety in remote locations
+- **Resource Allocation** - Optimize dispatch based on current locations
+
+## 🔒 Security & Privacy
+
+- Role-based access control (RBAC)
+- Secure authentication system
+- Location data encryption
+- User consent required for tracking
+
+## 🎯 Hackathon Context
+
+Built during **.devHacks 2024**, this project demonstrates:
+- Full-stack development skills
+- Real-time data visualization
+- User authentication and authorization
+- Map integration and geolocation APIs
+- Team collaboration and rapid prototyping
+
+## 📄 License
+
+This project is available for educational and demonstration purposes.
